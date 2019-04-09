@@ -1,4 +1,4 @@
-{   
+{
     "name": "Karadere-gatsby",
     "version": "0.0.1",
     "description": "Karadere static web page build on Gatsby.js",
@@ -8,7 +8,47 @@
         "format": "prettier --write 'src/**/*.js'",
         "lint:js": "eslint \"**/*.{js,jsx}\"",
         "lint": "run-p lint:*",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "clean": "rm -rf public/ .cache/",
+        "start": "npm run develop"
+    },
+    "dependencies": {
+        "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
+        "bulma": "^0.7.2",
+        "gatsby": "^2.0.98",
+        "gatsby-paginate": "^1.0.17",
+        "gatsby-plugin-feed": "^2.0.11",
+        "gatsby-plugin-google-tagmanager": "^2.0.8",
+        "gatsby-plugin-manifest": "^2.0.13",
+        "gatsby-plugin-netlify": "^2.0.7",
+        "gatsby-plugin-netlify-cms": "^3.0.10",
+        "gatsby-plugin-nprogress": "^2.0.7",
+        "gatsby-plugin-offline": "^2.0.21",
+        "gatsby-plugin-react-helmet": "^3.0.5",
+        "gatsby-plugin-sass": "^2.0.7",
+        "gatsby-plugin-sharp": "^2.0.18",
+        "gatsby-plugin-sitemap": "^2.0.4",
+        "gatsby-remark-images": "^3.0.1",
+        "gatsby-remark-relative-images": "^0.2.1",
+        "gatsby-source-filesystem": "^2.0.17",
+        "gatsby-transformer-remark": "^2.2.0",
+        "gatsby-transformer-sharp": "^2.1.12",
+        "lodash": "^4.17.11",
+        "lodash-webpack-plugin": "^0.11.5",
+        "netlify-cms": "^2.3.3",
+        "node-sass": "^4.11.0",
+        "prop-types": "^15.6.2",
+        "react": "^16.7.0",
+        "react-disqus-comments": "^1.4.0",
+        "react-dom": "^16.7.0",
+        "react-helmet": "^5.2.0",
+        "react-share": "^2.4.0",
+        "uglifyjs-webpack-plugin": "^2.1.1"
+    },
+    "remarkConfig": {
+        "plugins": [
+            "remark-preset-lint-recommended"
+        ]
     },
     "devDependencies": {
         "eslint": "5.16.0",
@@ -17,6 +57,8 @@
         "eslint-plugin-import": "2.16.0",
         "eslint-plugin-jsx-a11y": "6.2.1",
         "eslint-plugin-prettier": "3.0.1",
-        "eslint-plugin-react": "7.12.4"
+        "eslint-plugin-react": "7.12.4",
+        "remark-cli": "^6.0.1",
+        "remark-preset-lint-recommended": "^3.0.2"
     }
 }
