@@ -13,14 +13,14 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <Helmet title={`Tags | ${title}`} />
+    <Helmet title={`${title} | По теми`} />
     <section className="hero is-primary is-bold is-medium">
       <div className="">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h1 className="title">Tags</h1>
+                <h1 className="title">Категории</h1>
               </div>
             </div>
           </div>
