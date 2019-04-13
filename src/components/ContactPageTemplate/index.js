@@ -72,17 +72,17 @@ class ContactPageTemplate extends Component {
               <input type="hidden" name="form-name" value="contact" />
               <div hidden>
                 <label>
-                  Don’t fill this out:{' '}
+                  Не попълвай:{' '}
                   <input name="bot-field" onChange={this.handleChange} />
                 </label>
               </div>
               <div className="field">
-                <label className="label">Name</label>
+                <label className="label">Име</label>
                 <div className="control">
                   <input
                     className="input"
                     type="text"
-                    placeholder="Full Name"
+                    placeholder="Име"
                     name="name"
                     id="name"
                     onChange={this.handleChange}
@@ -105,11 +105,11 @@ class ContactPageTemplate extends Component {
               </div>
 
               <div className="field">
-                <label className="label">Message</label>
+                <label className="label">Съобщение</label>
                 <div className="control">
                   <textarea
                     className="textarea"
-                    placeholder="Message"
+                    placeholder="Съобщение"
                     name="message"
                     id="message"
                     rows="6"
@@ -121,7 +121,7 @@ class ContactPageTemplate extends Component {
               <div className="field is-grouped is-pulled-right">
                 <div className="control">
                   <button className="button is-text" type="reset">
-                    Cancel
+                    Отмяна
                   </button>
                 </div>
                 <div className="control">
@@ -134,7 +134,7 @@ class ContactPageTemplate extends Component {
                       !this.state.message
                     }
                   >
-                    Submit
+                    Изпращане
                   </button>
                 </div>
               </div>
