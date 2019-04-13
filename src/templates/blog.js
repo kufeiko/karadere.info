@@ -39,7 +39,7 @@ export default class BlogPage extends Component {
     return (
       <Layout>
         <Helmet>
-          <title>Blog | Gatsby Starter Business</title>
+          <title>Blog | Да спасим Кара дере</title>
           {/* Schema.org tags */}
           <script type="application/ld+json">
             {JSON.stringify(websiteSchemaOrgJSONLD)}

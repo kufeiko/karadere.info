@@ -7,18 +7,18 @@ import AboutPageTemplate from '../components/AboutPageTemplate';
 import Layout from '../components/Layout';
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: page } = data;
 
   return (
     <Layout>
       <Helmet>
-        <title>{post.frontmatter.meta_title}</title>
-        <meta name="description" content={post.frontmatter.meta_description} />
+        <title>{page.frontmatter.meta_title}</title>
+        <meta name="description" content={page.frontmatter.meta_description} />
       </Helmet>
       <AboutPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        title={page.frontmatter.title}
+        content={page.html}
       />
     </Layout>
   );

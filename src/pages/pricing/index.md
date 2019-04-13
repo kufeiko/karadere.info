@@ -1,7 +1,7 @@
 ---
 templateKey: pricing-page
 title: Pricing
-meta_title: Pricing | Gatsby Starter Business
+meta_title: Pricing | Да спасим Кара дере
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam

@@ -73,7 +73,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter Business Content Manager`,
+        htmlTitle: config.NetlifyCmsHtmlTitle,
       },
     },
     {
