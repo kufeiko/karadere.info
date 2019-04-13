@@ -1,7 +1,7 @@
 ---
 templateKey: 'home-page'
-title: Gatsby Starter Business
-meta_title: Home | Gatsby Starter Business
+title: Да спасим Кара дере
+meta_title: Да спасим Кара дере | Начало
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
@@ -59,7 +59,7 @@ testimonials:
   - author: Vaibhav Sharma
     quote: >-
       Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed diam luctus pretium. 
-      Sed quis egestas libero. Vestibulum nec venenatis ligula. 
+      Sed quis egestas libero. Vestibulum nec venenatis ligula.
   - author: Subarashi San
     quote: >-
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et dignissim ligula. 

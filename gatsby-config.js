@@ -1,6 +1,6 @@
-const config = require('./config')
+const config = require('./config');
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   siteMetadata: {
@@ -73,7 +73,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter Business Content Manager`,
+        htmlTitle: config.NetlifyCmsHtmlTitle,
       },
     },
     {
@@ -117,11 +117,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-feed',
       options: {
-        setup (ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = config.siteTitle
-          return ret
+        setup(ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata;
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
+          ret.generator = config.siteTitle;
+          return ret;
         },
         query: `
                 {
@@ -142,8 +142,8 @@ module.exports = {
               `,
         feeds: [
           {
-            serialize (ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
+            serialize(ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
               return ctx.query.allMarkdownRemark.edges
                 .filter(
                   edge => edge.node.frontmatter.templateKey === 'article-page'
@@ -156,8 +156,8 @@ module.exports = {
                   author: rssMetadata.author,
                   url: rssMetadata.site_url + edge.node.fields.slug,
                   guid: rssMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{'content:encoded': edge.node.html}],
-                }))
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                }));
             },
             query: `
                     {
@@ -206,4 +206,4 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
   ],
-}
+};
