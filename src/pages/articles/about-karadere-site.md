@@ -3,7 +3,7 @@ templateKey: article-page
 title: Да спасим Кара дере - инициатива и сайт
 slug: about-karadere-site
 date: '2010-10-26T21:00:00.000Z'
-cover:
+cover: ''
 meta_title: Да спасим Кара дере - инициатива и сайт
 meta_description: Няколко думи за причината този сайт да съществува.
 tags:
