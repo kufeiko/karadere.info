@@ -66,9 +66,9 @@ collections:
               name: 'meta_description',
               widget: 'text',
             }
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'src/pages/blog'
+  - name: 'article'
+    label: 'Article'
+    folder: 'src/pages/articles'
     create: true
     slug: '{{slug}}'
     fields:
@@ -78,11 +78,11 @@ collections:
           widget: 'hidden',
           default: 'article-page',
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Заглавие', name: 'title', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string', required: 'false' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Cover', name: 'cover', widget: 'image', required: 'false' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
-      - { label: 'Meta Description', name: 'meta_description', widget: 'text' }
+      - { label: 'Дата публикуване', name: 'date', widget: 'datetime' }
+      - { label: 'Графика', name: 'cover', widget: 'image', required: 'false' }
+      - { label: 'Съдържание', name: 'body', widget: 'markdown' }
+      - { label: 'Етикети', name: 'tags', widget: 'list' }
+      - { label: 'Мета заглавие', name: 'meta_title', widget: 'string' }
+      - { label: 'Мета описание', name: 'meta_description', widget: 'text' }
