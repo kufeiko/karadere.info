@@ -79,9 +79,9 @@ collections:
           default: 'article-page',
         }
       - { label: 'Заглавие', name: 'title', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string', required: 'false' }
+      - { label: 'Slug', name: 'slug', widget: 'string', required: false }
       - { label: 'Дата публикуване', name: 'date', widget: 'datetime' }
-      - { label: 'Графика', name: 'cover', widget: 'image', required: 'false' }
+      - { label: 'Графика', name: 'cover', widget: 'image', required: false }
       - { label: 'Съдържание', name: 'body', widget: 'markdown' }
       - { label: 'Етикети', name: 'tags', widget: 'list' }
       - { label: 'Мета заглавие', name: 'meta_title', widget: 'string' }
