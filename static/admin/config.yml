@@ -29,6 +29,7 @@ collections:
               name: 'meta_description',
               widget: 'text',
             }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
@@ -40,13 +41,13 @@ collections:
               default: 'about-page',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
           - {
               label: 'Meta Description',
               name: 'meta_description',
               widget: 'text',
             }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/contact/index.md'
         label: 'Contact Page'
         name: 'contact'
