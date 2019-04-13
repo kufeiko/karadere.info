@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 const PaginationLink = props => {
   if (!props.test) {
     return (
-      <Link to={`/blog/${props.url}`} className="button is-rounded">
+      <Link to={`/articles/${props.url}`} className="button is-rounded">
         {props.text}
       </Link>
     );
@@ -21,7 +21,7 @@ const PaginationLink = props => {
   }
 };
 
-export default class BlogPage extends Component {
+export default class ArticlePage extends Component {
   render() {
     const { pageContext } = this.props;
     const { group, index, first, last } = pageContext;
@@ -39,19 +39,19 @@ export default class BlogPage extends Component {
     return (
       <Layout>
         <Helmet>
-          <title>Blog | Да спасим Кара дере</title>
+          <title>Да спасим Кара дере | Актуално</title>
           {/* Schema.org tags */}
           <script type="application/ld+json">
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
         <section className="hero is-primary is-bold">
-          <div className="hero-body">
+          <div>
             <div className="container">
               <div className="columns">
                 <div className="column is-10 is-offset-1">
                   <div className="section">
-                    <h1 className="title">Blog</h1>
+                    <h1 className="title">Актуално</h1>
                   </div>
                 </div>
               </div>
@@ -65,9 +65,13 @@ export default class BlogPage extends Component {
               <PaginationLink
                 test={first}
                 url={previousUrl}
-                text="Previous Page"
+                text="Предишна страница"
               />
-              <PaginationLink test={last} url={nextUrl} text="Next Page" />
+              <PaginationLink
+                test={last}
+                url={nextUrl}
+                text="Следваща страница"
+              />
             </div>
           </section>
         </section>

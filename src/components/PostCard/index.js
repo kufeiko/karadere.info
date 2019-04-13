@@ -24,7 +24,7 @@ const PostCard = ({ posts }) => {
               <br />
               <br />
               <Link className="button is-small" to={post.fields.slug}>
-                Keep Reading →
+                Виж повече →
               </Link>
             </p>
           </div>

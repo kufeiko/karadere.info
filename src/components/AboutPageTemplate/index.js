@@ -8,7 +8,7 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
       <section className="hero is-primary is-bold is-medium">
-        <div className="hero-body">
+        <div className="">
           <div className="container">
             <div className="columns">
               <div className="column is-10 is-offset-1">
