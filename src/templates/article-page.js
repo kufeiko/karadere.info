@@ -1,18 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import ArticleTemplate from '../components/ArticleTemplate'
-import SE0 from '../components/SEO'
-import Share from '../components/Share'
-import Disqus from '../components/Disqus'
-import Layout from '../components/Layout'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import { HTMLContent } from '../components/Content';
+import ArticleTemplate from '../components/ArticleTemplate';
+import SE0 from '../components/SEO';
+import Share from '../components/Share';
+import Disqus from '../components/Disqus';
+import Layout from '../components/Layout';
 
-const ArticlePage = ({data}) => {
-  const {markdownRemark: post} = data
+const ArticlePage = ({ data }) => {
+  const { markdownRemark: post } = data;
   return (
     <Layout>
-      <section className='section'>
+      <section className="section">
         <SE0
           title={post.frontmatter.title}
           meta_title={post.frontmatter.meta_title}
@@ -20,9 +20,9 @@ const ArticlePage = ({data}) => {
           cover={post.frontmatter.cover}
           slug={post.fields.slug}
         />
-        <div className='container content'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
               <ArticleTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
@@ -38,25 +38,22 @@ const ArticlePage = ({data}) => {
                 excerpt={post.frontmatter.meta_description}
               />
               <hr />
-              <Disqus
-                title={post.frontmatter.title}
-                slug={post.fields.slug}
-              />
+              <Disqus title={post.frontmatter.title} slug={post.fields.slug} />
             </div>
           </div>
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 ArticlePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default ArticlePage
+export default ArticlePage;
 
 export const pageQuery = graphql`
   query ArticleByID($id: String!) {
@@ -64,8 +61,8 @@ export const pageQuery = graphql`
       id
       html
       fields {
-            slug
-          }
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
@@ -76,4 +73,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
