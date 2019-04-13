@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PricingPageTemplate from '../../components/PricingPageTemplate'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PricingPageTemplate from '../../components/PricingPageTemplate';
 
 const PricingPagePreivew = ({ entry, getAsset }) => {
-  const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
-  const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
+  const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans']);
+  const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : [];
 
   return (
     <PricingPageTemplate
@@ -17,14 +17,14 @@ const PricingPagePreivew = ({ entry, getAsset }) => {
         plans: pricingPlans,
       }}
     />
-  )
-}
+  );
+};
 
 PricingPagePreivew.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
-}
+};
 
-export default PricingPagePreivew
+export default PricingPagePreivew;
