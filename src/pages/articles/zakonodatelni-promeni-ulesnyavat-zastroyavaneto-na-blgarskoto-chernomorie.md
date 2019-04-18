@@ -1,7 +1,7 @@
 ---
 templateKey: 'article-page'
 title: 'Законодателни промени улесняват застрояването на българското Черноморие, но не в полза на „дребните собственици и семейства със среден и нисък доход“, както се твърди от вносителите'
-slug: 'zakonodatelni-promeni-ulesnyavat-zastroyavaneto-na-blgarskoto-chernomorie-no-ne-v-polza-na-drebnite-sobstveniczi-i-semejstva-ss-sreden-i-nisk-dohod-kakto-se-tvrdi-ot-vnositelite'
+slug: 'zakonodatelni-promeni-ulesnyavat-zastroyavaneto-na-blgarskoto-chernomorie'
 date: '2017-05-16T00:00:00.000Z'
 author: 'Maria Shturova'
 cover: ''
