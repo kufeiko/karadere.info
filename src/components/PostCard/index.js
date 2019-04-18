@@ -12,14 +12,14 @@ const PostCard = ({ posts }) => {
             style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
             key={post.id}
           >
-            <p>
+            <div>
               <h2>
                 <Link className="has-text-primary" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>
               </h2>
               <small className="data-text">{post.frontmatter.date}</small>
-            </p>
+            </div>
             <p>
               {post.excerpt}
               <br />
