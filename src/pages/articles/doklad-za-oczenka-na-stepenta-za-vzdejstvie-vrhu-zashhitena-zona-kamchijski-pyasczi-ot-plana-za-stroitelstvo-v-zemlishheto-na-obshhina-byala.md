@@ -10,3 +10,5 @@ meta_description: ''
 tags:
   - Случай
 ---
+
+[byala_zastroyabane.pdf](/files/byala_zastroyabane.pdf)
