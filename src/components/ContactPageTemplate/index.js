@@ -118,6 +118,10 @@ class ContactPageTemplate extends Component {
                 </div>
               </div>
 
+              <div className="field">
+                <div data-netlify-recaptcha="true" />
+              </div>
+
               <div className="field is-grouped is-pulled-right">
                 <div className="control">
                   <button className="button is-text" type="reset">
