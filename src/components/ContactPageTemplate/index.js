@@ -66,17 +66,11 @@ class ContactPageTemplate extends Component {
               action="/contact/success"
               encType="application/x-www-form-urlencoded"
               data-netlify="true"
-              data-netlify-honeypot="bot-field"
               data-netlify-recaptcha="true"
               onSubmit={this.handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
-              <div hidden>
-                <label>
-                  Не попълвай:{' '}
-                  <input name="bot-field" onChange={this.handleChange} />
-                </label>
-              </div>
+
               <div className="field">
                 <label className="label">Име</label>
                 <div className="control">
