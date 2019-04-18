@@ -31,12 +31,12 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section>
+      <section className="content-section">
         <div className="container">
-          <div className="section">
+          <div className="section main-section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="section">
+                <div className="section text-section">
                   <PageContent className="content" content={content} />
                 </div>
               </div>

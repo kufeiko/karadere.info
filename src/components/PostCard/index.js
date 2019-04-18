@@ -8,16 +8,17 @@ const PostCard = ({ posts }) => {
         .filter(post => post.node.frontmatter.templateKey === 'article-page')
         .map(({ node: post }) => (
           <div
-            className="content"
+            className="content single-card"
             style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
             key={post.id}
           >
             <p>
-              <Link className="has-text-primary" to={post.fields.slug}>
-                {post.frontmatter.title}
-              </Link>
-              <span> &bull; </span>
-              <small>{post.frontmatter.date}</small>
+              <h2>
+                <Link className="has-text-primary" to={post.fields.slug}>
+                  {post.frontmatter.title}
+                </Link>
+              </h2>
+              <small className="data-text">{post.frontmatter.date}</small>
             </p>
             <p>
               {post.excerpt}
