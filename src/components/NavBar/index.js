@@ -33,26 +33,21 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           id="navMenu"
         >
           <div className="navbar-end">
-            <nav>
-              <Link className="navbar-item" to="/about">
-                За нас
-              </Link>
-              <Link className="navbar-item" to="/articles">
-                Актуално
-              </Link>
-              <div className="navbar-item">
-                <div className="field is-grouped">
-                  <p className="control">
-                    <Link
-                      className="button is-primary is-outlined"
-                      to="/contact"
-                    >
-                      Контакти
-                    </Link>
-                  </p>
-                </div>
+            <Link className="navbar-item" to="/about">
+              За нас
+            </Link>
+            <Link className="navbar-item" to="/articles">
+              Актуално
+            </Link>
+            <div className="navbar-item">
+              <div className="field is-grouped">
+                <p className="control">
+                  <Link className="button is-primary is-outlined" to="/contact">
+                    Контакти
+                  </Link>
+                </p>
               </div>
-            </nav>
+            </div>
             <SearchBox searchIndex={data.siteSearchIndex.index} />
           </div>
         </div>
