@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const xml2js = require('xml2js');
-const slugify = require('slugify');
+const slugify = require('@sindresorhus/slugify');
 const TurndownService = require('turndown');
 const turndownService = new TurndownService();
 
@@ -53,11 +53,7 @@ fileReadStream.on('end', () => {
         items.forEach(item => {
           const title = item.title[0];
           console.log(`Generating file for: ${title}`);
-          const slug = slugify(title, {
-            replacement: '-', // replace spaces with replacement
-            remove: /['"„“,:.]+/g, // regex to remove characters
-            lower: true, // result in lower case
-          });
+          const slug = slugify(title);
           const description = item.description
             ? turndownService.turndown(item.description[0])
             : '';
