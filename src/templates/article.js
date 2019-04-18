@@ -46,7 +46,7 @@ export default class ArticlePage extends Component {
           </script>
         </Helmet>
         <section className="hero is-primary is-bold">
-          <div>
+          <div className="hero-body has-text-centered">
             <div className="container">
               <div className="columns">
                 <div className="column is-10 is-offset-1">

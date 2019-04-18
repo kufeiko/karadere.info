@@ -15,7 +15,7 @@ const TagsPage = ({
   <Layout>
     <Helmet title={`${title} | По теми`} />
     <section className="hero is-primary is-bold is-medium">
-      <div className="">
+      <div className="hero-body has-text-centered">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
