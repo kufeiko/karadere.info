@@ -1,7 +1,7 @@
 ---
 templateKey: 'article-page'
 title: 'Информация относно национална гражданска инициатива "Карадере" с цел основана национална подписка  За запазване на последния див плаж на България - „Карадере” в настоящия му незастроен вид'
-slug: 'informacziya-otnosno-naczionalna-grazhdanska-inicziativa-karadere-s-czel-osnovana-naczionalna-podpiska-za-zapazvane-na-posledniya-div-plazh-na-blgariya-karadere-v-nastoyashhiya-mu-nezastroen-vid'
+slug: 'informacziya-otnosno-naczionalna-grazhdanska-inicziativa-karadere'
 date: '2014-08-05T00:00:00.000Z'
 author: 'marialaleva'
 cover: ''
