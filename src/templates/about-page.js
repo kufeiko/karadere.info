@@ -1,34 +1,34 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import { HTMLContent } from '../components/Content'
-import AboutPageTemplate from '../components/AboutPageTemplate'
-import Layout from '../components/Layout'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import { HTMLContent } from '../components/Content';
+import AboutPageTemplate from '../components/AboutPageTemplate';
+import Layout from '../components/Layout';
 
-const AboutPage = ({data}) => {
-  const {markdownRemark: post} = data
+const AboutPage = ({ data }) => {
+  const { markdownRemark: page } = data;
 
   return (
     <Layout>
       <Helmet>
-        <title>{post.frontmatter.meta_title}</title>
-        <meta name='description' content={post.frontmatter.meta_description} />
+        <title>{page.frontmatter.meta_title}</title>
+        <meta name="description" content={page.frontmatter.meta_description} />
       </Helmet>
       <AboutPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        title={page.frontmatter.title}
+        content={page.html}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -41,4 +41,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;
