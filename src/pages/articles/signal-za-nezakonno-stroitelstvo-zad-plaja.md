@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Сигнал за незаконно строителство зад плажа'
-slug: 'signal-za-nezakonno-stroitelstvo-zad-plazha'
+slug: 'signal-za-nezakonno-stroitelstvo-zad-plaja'
 date: '2010-08-25T00:00:00.000Z'
 author: 'kdAdmin'
 cover: ''
 meta_title: 'Сигнал за незаконно строителство зад плажа'
-meta_description: ''
+meta_description: 'Сигнал за незаконна строителна дейност зад плажа на Кара дере, която се извършва след работно време от паркиран насред плажа булдозер през август 2010 г.'
 tags:
   - Сигнал
 ---

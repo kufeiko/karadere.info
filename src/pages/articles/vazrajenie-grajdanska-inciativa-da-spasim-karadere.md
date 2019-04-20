@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Възражение от Гражданска инциатива Да спасим Карадере'
-slug: 'vuzrazhenie-ot-grazhdanska-inciativa-da-spasim-karadere'
+slug: 'vazrajenie-grajdanska-inciativa-da-spasim-karadere'
 date: '2011-10-14T00:00:00.000Z'
 author: 'marialaleva'
 cover: ''
 meta_title: 'Възражение от Гражданска инциатива Да спасим Карадере'
-meta_description: ''
+meta_description: 'Това е пълния текст на Възражението, което беше прикачено към всички изпратени граждански писма по повод инвестиционното намерение на фирма "Дарматекс ЕООД" и проведеното Обществено обсъждане по темата на 14.06.2011 г. в с.Горица, общ.Бяла, обл.Варна.'
 tags:
   - Действие
 ---

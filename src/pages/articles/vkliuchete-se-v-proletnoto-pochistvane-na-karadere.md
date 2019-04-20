@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Включете се в пролетното почистване на Карадере'
-slug: 'vklyuchete-se-v-proletnoto-pochistvane-na-karadere'
+slug: 'vkliuchete-se-v-proletnoto-pochistvane-na-karadere'
 date: '2012-03-22T00:00:00.000Z'
 author: 'pavelan'
 cover: ''
 meta_title: 'Включете се в пролетното почистване на Карадере'
-meta_description: ''
+meta_description: 'Пролетното почистване на Карадере е насрочено за уикенда на 7 - 8 април 2012г.'
 tags:
   - Действие
 ---

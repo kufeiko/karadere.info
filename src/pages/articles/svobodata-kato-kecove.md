@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Свободата като "Кецове"'
-slug: 'svobodata-kato-keczove'
+slug: 'svobodata-kato-kecove'
 date: '2011-11-06T00:00:00.000Z'
 author: 'pavelan'
 cover: ''
 meta_title: 'Свободата като "Кецове"'
-meta_description: ''
+meta_description: 'Карадере вече си има официален филм: „Кецове” (2010).'
 tags:
   - За дерето
 ---

@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Вътрешна проверка на МОСВ по скандалното решение на РИОСВ Бургас за бетонния "къмпинг" на "Макси" разкрива шокиращи факти'
-slug: 'vtreshna-proverka-na-mosv-po-skandalnoto-reshenie-na-riosv-burgas-za-betonniya-kmping-na-maksi-razkriva-shokirashhi-fakti'
+slug: 'vatreshna-proverka-mosv-po-skandalnoto-reshenie'
 date: '2015-03-18T00:00:00.000Z'
 author: ''
 cover: ''
 meta_title: 'Вътрешна проверка на МОСВ по скандалното решение на РИОСВ Бургас за бетонния "къмпинг" на "Макси" разкрива шокиращи факти'
-meta_description: ''
+meta_description: 'Доклад от вътрешната проверка на МОСВ извършена през м.Октомври 2014 г. стигна до Гражданска инициатива "Да спасим Карадере" от вътрешни източници в МОСВ.'
 tags:
   - Случай
 ---

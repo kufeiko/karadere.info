@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'За подкрепа: Подписка за обявяване на Кара дере и други територии в района за резервати'
-slug: 'za-podkrepa-podpiska-za-obyavyavane-na-kara-dere-i-drugi-teritorii-v-rajona-za-rezervati'
+slug: 'za-podkrepa-podpiska-obiaviavane-karadere-rezervat'
 date: '2011-06-21T00:00:00.000Z'
 author: 'kdAdmin'
 cover: ''
 meta_title: 'За подкрепа: Подписка за обявяване на Кара дере и други територии в района за резервати'
-meta_description: ''
+meta_description: 'Обявена е подписка за обявяване за поддържани резервати крайбрежните незастроени територии до 2 км от брега в долуизброените райони.'
 tags:
   - Действие
 ---

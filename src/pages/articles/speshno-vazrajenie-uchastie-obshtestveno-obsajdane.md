@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Спешно: възражение и участие в обществено обсъждане на 14 юни'
-slug: 'speshno-vzrazhenie-i-uchastie-v-obshhestveno-obszhdane-na-14-yuni'
+slug: 'speshno-vazrajenie-uchastie-obshtestveno-obsajdane'
 date: '2011-06-06T00:00:00.000Z'
 author: 'kdAdmin'
 cover: ''
 meta_title: 'Спешно: възражение и участие в обществено обсъждане на 14 юни'
-meta_description: ''
+meta_description: 'Моля всеки, който има възможност да изпрати писмено становище по пощата, което отворено на събранието има законова стойност като глас.'
 tags:
   - Действие
 ---

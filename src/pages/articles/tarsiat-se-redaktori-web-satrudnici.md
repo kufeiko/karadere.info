@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Търсят се редактори и уеб-сътрудници'
-slug: 'trsyat-se-redaktori-i-ueb-strudniczi'
+slug: 'tarsiat-se-redaktori-web-satrudnici'
 date: '2011-05-31T00:00:00.000Z'
 author: 'kdAdmin'
 cover: ''
 meta_title: 'Търсят се редактори и уеб-сътрудници'
-meta_description: ''
+meta_description: 'За нуждите на кампанията и уеб сайта й се търсят доброволни сътрудници, които да подготвят и публикуват редакционно съдържани и да подпомогнат развитието на сайта в Друпал.'
 tags:
   - Действие
 ---

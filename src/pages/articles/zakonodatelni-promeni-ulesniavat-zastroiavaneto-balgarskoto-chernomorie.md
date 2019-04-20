@@ -1,12 +1,12 @@
 ---
 templateKey: 'article-page'
 title: 'Законодателни промени улесняват застрояването на българското Черноморие, но не в полза на „дребните собственици и семейства със среден и нисък доход“, както се твърди от вносителите'
-slug: 'zakonodatelni-promeni-ulesnyavat-zastroyavaneto-na-blgarskoto-chernomorie'
+slug: 'zakonodatelni-promeni-ulesniavat-zastroiavaneto-balgarskoto-chernomorie'
 date: '2017-05-16T00:00:00.000Z'
 author: 'Maria Shturova'
 cover: ''
 meta_title: 'Законодателни промени улесняват застрояването на българското Черноморие, но не в полза на „дребните собственици и семейства със среден и нисък доход“, както се твърди от вносителите'
-meta_description: ''
+meta_description: '„Да спасим Кара дере“ сме част от инициаторите на граждански протест днес – 16 май, на площад Народно събрание от 18,30ч.'
 tags:
   - Действие
 ---
