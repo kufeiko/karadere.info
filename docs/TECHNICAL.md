@@ -16,11 +16,10 @@ We are grateful you are interested into the technical details of the project. Pr
 We recommend you to use [Node Version Manager](https://github.com/creationix/nvm).
 
 ```sh
-# Install node version corresponding to the one defined in .nvmrc
-# Use '--reinstall-packages-from=node' if you want to migrate npm packages from a previous version
+# Install a specific version.
 nvm install
 
-# Use the newly installed version
+# Use a specific version.
 nvm use
 ```
 
@@ -50,10 +49,19 @@ This will start a [GraphQL](https://graphql.org/learn/) server and a watch task 
 
 Changing your code, you will see changes reflect on the website immediately without page reload.
 
+## Build project
+
+This is the command:
+
+```sh
+yarn build
+```
+
+When the process is ready, there will be a folder `public` which you can upload on any hosting which can work with static assets.
+
 ## Structure overview
 
 ```
-➜  karadere.info git:(master) ✗ tree -I node_modules  -L 2
 .
 ├── config.js                 <--- Central configuration file
 ├── docs                      <--- Specific documentation
@@ -71,7 +79,7 @@ Changing your code, you will see changes reflect on the website immediately with
 │   ├── cms                   <--- Scripting for NetlifyCMS
 │   ├── components            <--- React components
 │   ├── html.js               <--- Specifics for rendering, rarely used.
-│   ├── pages                 <--- CONTENT IS HERE
+│   ├── pages                 <--- 🔥🔥🔥 CONTENT 🔥🔥🔥
 │   └── templates             <--- Templates, re-used by NetlifyCMS
 ├── static                    <--- Assets which webpack does not optimise
 │   ├── admin                 <--- NetlifyCMS configuration
