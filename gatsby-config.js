@@ -2,6 +2,15 @@ const config = require('./config');
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
+const langBulder = lunr => builder => {
+  // removing stemmer
+  builder.pipeline.remove(lunr.stemmer);
+  builder.searchPipeline.remove(lunr.stemmer);
+  // or similarity tuning
+  builder.k1(1.3);
+  builder.b(0);
+};
+
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -204,6 +213,44 @@ module.exports = {
             meta_description: node => node.fields.meta_description,
           },
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-lunr`,
+      options: {
+        languages: [
+          {
+            // ISO 639-1 language codes. See https://lunrjs.com/guides/language_support.html for details
+            name: 'ru',
+            // A function for filtering nodes. () => true by default
+            filterNodes: node => node.frontmatter !== undefined, //node.frontmatter.lang === 'ru',
+            plugins: [langBulder],
+          },
+        ],
+        // Fields to index. If store === true value will be stored in index file.
+        // Attributes for custom indexing logic. See https://lunrjs.com/docs/lunr.Builder.html for details
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          //{ name: 'url', store: true },
+          { name: 'slug', store: true },
+          { name: 'tags', store: true },
+          { name: 'meta_title', store: true },
+          { name: 'meta_description', store: true },
+        ],
+        // How to resolve each field's value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields' values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            //url: node => node.fields.url,
+            tags: node => node.frontmatter.tags,
+            slug: node => node.fields.slug,
+            meta_title: node => node.fields.meta_title,
+            meta_description: node => node.fields.meta_description,
+          },
+        },
+        //custom index file name, default is search_index.json
+        filename: 'search_index.json',
       },
     },
     `gatsby-plugin-netlify`,

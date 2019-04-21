@@ -14,12 +14,12 @@
     "start": "npm run develop"
   },
   "dependencies": {
-    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.2.1",
     "bulma": "0.7.2",
     "gatsby": "2.0.98",
     "gatsby-paginate": "1.0.17",
     "gatsby-plugin-feed": "2.0.11",
     "gatsby-plugin-google-tagmanager": "2.0.8",
+    "gatsby-plugin-lunr": "^1.4.0",
     "gatsby-plugin-manifest": "2.0.13",
     "gatsby-plugin-netlify": "2.0.7",
     "gatsby-plugin-netlify-cms": "3.0.10",

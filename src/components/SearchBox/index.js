@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import { Index } from 'elasticlunr';
-
+// Search component
 export default class SearchBox extends Component {
   constructor(props) {
     super(props);
@@ -23,8 +22,8 @@ export default class SearchBox extends Component {
           placeholder="Търсене"
         />
         <div className="navbar-dropdown">
-          {this.state.results.map(page => (
-            <Link className="navbar-item" key={page.id} to={page.slug}>
+          {this.state.results.map((page, i) => (
+            <Link className="navbar-item" key={i} to={page.slug}>
               {page.title}
             </Link>
           ))}
@@ -33,20 +32,23 @@ export default class SearchBox extends Component {
     );
   }
 
-  getOrCreateIndex = () =>
-    this.index ? this.index : Index.load(this.props.searchIndex);
+  getSearchResults(query) {
+    if (!query || !window.__LUNR__) return [];
+    const lunrIndex = window.__LUNR__['ru']; // TODO: here the language should be bg once there is BG lang
+    const results = lunrIndex.index.search(query); // you can  customize your search , see https://lunrjs.com/guides/searching.html
+    return results.map(({ ref }) => lunrIndex.store[ref]);
+  }
 
-  search = evt => {
-    const query = evt.target.value;
-    this.index = this.getOrCreateIndex();
-    this.setState({
-      query,
-      // Query the index with search string to get an [] of IDs
-      results: this.index
-        .search(query, { expand: true }) // Accept partial matches
-        // Map over each ID and return the full document
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
-      isActive: !!query,
+  search = event => {
+    const query = event.target.value;
+    const results = this.getSearchResults(query);
+    const isActive = !!query;
+    this.setState(s => {
+      return {
+        results,
+        query,
+        isActive,
+      };
     });
   };
 }
