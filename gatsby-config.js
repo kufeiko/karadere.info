@@ -198,24 +198,6 @@ module.exports = {
       },
     },
     {
-      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-      options: {
-        // Fields to index
-        fields: [`title`, `tags`, `slug`, `meta_title`],
-        // How to resolve each field`s value for a supported node type
-        resolvers: {
-          // For any node of type MarkdownRemark, list how to resolve the fields` values
-          MarkdownRemark: {
-            title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
-            slug: node => node.fields.slug,
-            meta_title: node => node.fields.meta_title,
-            meta_description: node => node.fields.meta_description,
-          },
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-lunr`,
       options: {
         languages: [
